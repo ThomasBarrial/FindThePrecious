@@ -171,8 +171,7 @@ a:hover {
 
 
 .theRing .theOne p {
-    font-family: Verdana, Gene
-    va, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     color: white;
     padding-top: 3rem;
@@ -184,4 +183,77 @@ a:hover {
     font-family: 'Raleway', sans-serif;
     color: white;
     padding-top: 3rem;
+}
+
+   /* -- End -- */
+
+.priorityTarget {
+    padding-top: 10rem;
+}
+
+.priorityTarget .backGround {
+        padding-top: 40rem;
+}
+
+.priorityTarget .targetTitle {
+   margin: 10px;
+}
+
+
+
+.priorityTarget h2 {
+    color: white;
+    font-size: 60px;
+    font-family: 'Cormorant Unicase', serif;
+    text-align: center;
+}
+
+.priorityTarget .allTarget {
+    padding-top: 6rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.priorityTarget .targetBlock {
+    background-color:hsla(0, 0%, 20%, 0.288);;
+    width: 30%;
+    padding: 50px;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 10px 10px 10px black;
+}
+
+.priorityTarget .targetBlock img {
+    height: 28rem;
+    width: 20rem;
+    box-shadow: 10px 10px 10px black;
+}
+
+
+.priorityTarget .allTarget h3 {
+    padding-top: 2rem;
+    color: white;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;;
+}
+
+.priorityTarget .allTarget p {
+    padding-top: 2rem;
+    color: white;
+    font-size: 15px;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.priorityTarget .allTarget h4 {
+    padding-top: 2rem;
+    color: white;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif'
+
 }
