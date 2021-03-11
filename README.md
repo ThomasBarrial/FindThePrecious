@@ -1,2 +1,2 @@
-# FindThePrecious
-A Website for beginners Design/HTML/CSS/JS
+# FindThePr-cious.com
+This is training Website ForBeginners Html/CSS/Java
