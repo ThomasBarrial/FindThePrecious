@@ -1,2 +1,2 @@
-# FindThePr-cious.com
+# FindThePrecious.com
 This is training Website ForBeginners Html/CSS/Java
