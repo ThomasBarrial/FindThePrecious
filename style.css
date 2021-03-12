@@ -40,7 +40,7 @@ a:hover {
 }
 
 .backGround {
-    height:850px;
+    height:800px;
     width: 100%;
     opacity: 0.8;
     position: absolute;
@@ -86,7 +86,7 @@ a:hover {
 
 .headerTitle {
     height: 30rem;
-    margin-left: 40rem;
+    margin-left: 35rem;
     margin-right: 15rem;
     margin-top: 8rem;
     margin-bottom: 10rem;
@@ -107,17 +107,19 @@ a:hover {
     display: flex;
     flex-direction: row ;
     align-items: center;
-    margin-top: 3rem;
+    
 }
 
 .headerTitle .join button {
+    margin-top: 2rem;
     padding: 0.6rem 4rem;
     color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     background-color: hsla(0, 0%, 20%, 0.288);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     box-shadow: 8px 8px 6px black;
+    border: 0.1rem solid white;
 }
 
 .headerTitle h2 {
@@ -134,7 +136,8 @@ a:hover {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     color: white;
-    padding-top: 1.5rem;    
+    padding-top: 1.5rem;
+    line-height: 2rem;    
 
 }
    /* -- End Header -- */
@@ -168,6 +171,7 @@ a:hover {
     font-size: 18px;
     color: white;
     padding-top: 3rem;
+    line-height: 2rem;
 }
 
 .theRing .theOne h1 {
@@ -183,6 +187,7 @@ a:hover {
     font-size: 18px;
     color: white;
     padding-top: 3rem;
+    line-height: 2rem;
 }
 
 .theRing .theOne h2 {
@@ -202,7 +207,7 @@ a:hover {
 
 
 .priorityTarget {
-    margin-top: 15rem;
+    margin-top: 10rem;
 }
 
 .priorityTarget .backGround {
@@ -216,6 +221,7 @@ a:hover {
 
 
 .priorityTarget h2 {
+    padding-bottom: 2rem;
     color: white;
     font-size: 60px;
     font-family: 'Cormorant Unicase', serif;
@@ -223,7 +229,6 @@ a:hover {
 }
 
 .priorityTarget .allTarget {
-    padding-top: 3rem;
     margin-left: 4rem;
     margin-right: 4rem;
     display: flex;
@@ -262,6 +267,7 @@ a:hover {
     color: white;
     font-size: 15px;
     font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5rem;
 }
 
 .priorityTarget .allTarget h4 {
@@ -278,7 +284,7 @@ a:hover {
   /* -- TheNewsLetterSection -- */
 
   .newsLetter {
-    margin-top: 30rem;
+    margin-top: 20rem;
   }
 
 
@@ -287,7 +293,6 @@ a:hover {
     background-color:  hsla(0, 0%, 20%, 0.288);
     margin-right: 15rem;
     margin-left: 15rem;
-    margin-top: 2rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
     box-shadow: 10px 10px 10px black;
@@ -333,10 +338,11 @@ a:hover {
     margin-right: 2rem;
     background-color: hsla(0, 0%, 20%, 0.288);
     box-shadow: 10px 10px 10px black;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
+    border: 0.1rem solid white;
 }
 
 .inputEmail button {
@@ -345,9 +351,9 @@ a:hover {
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     background-color: hsla(0, 0%, 20%, 0.288);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     box-shadow: 8px 8px 6px black;
-
+    border: 0.1rem solid white;
 }
 
 .endTitle {
@@ -356,4 +362,31 @@ a:hover {
     font-size: 15px;
     font-family: 'Raleway', sans-serif;
     text-align: center;
+}
+
+/* -- END -- */
+
+/* -- Footer -- */
+
+.footer {
+    margin-top: 15rem;
+    height: 10rem;
+    background-color:  hsla(0, 0%, 20%, 0.288);
+    box-shadow: -3px -3px 15px hsla(0, 0%, 100%, 0.425);
+}
+
+.footer .footerBlock {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.footer .footerBlock p {
+    padding-top: 2rem;
 }
