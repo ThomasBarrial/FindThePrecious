@@ -1,0 +1,227 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black 
+}
+
+
+
+/* -- -- */
+
+
+/*Import GoogleFont*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&family=Monsieur+La+Doulaise&family=Shadows+Into+Light&display=swap');
+/* -- -- */
+
+/*Header*/
+a {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: white;
+    list-style: none    ;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.backGround2 {
+    height:800px;
+    width: 100%;
+    opacity: 0.8;
+    position: absolute;
+    left: auto;
+    right: auto;
+    z-index: -1;
+ 
+}
+
+
+
+/*-- NavBar -- */
+
+nav {
+    padding-left: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    align-items: center;
+    position: fixed;
+    background-color: hsla(0, 0%, 20%, 0.288);
+    box-shadow: 10px 10px 10px black;
+}
+
+.anim-nav{
+    background: hsla(0, 0%, 1%, 0.705);
+    color: black;
+    border-bottom: 1px solid;
+}
+
+.navMenu {
+    padding: 3rem;;
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+
+}
+
+.navMenu a {
+    font-family: 'Raleway', sans-serif;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+}
+
+.logo h1 {
+    font-size: 30px;
+    font-family: 'Cormorant Unicase', serif; 
+    display: flex;
+    align-content: center;
+}
+
+/*-- HEADER --*/  
+
+.header {
+    height: 100%;
+    width: 100% ;
+    background: url('Image/Fellows1.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.headerTitle {
+    padding: 20%;
+   
+    width: 100%;
+    max-width: 900px;
+}
+
+.headerTitle h1 {
+    width: 100%;
+    height: auto;
+    font-size: 60px;
+    font-family: 'Cormorant Unicase', serif;
+    color: white;
+    text-align: center;
+}
+
+
+
+.headerTitle h2 {
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
+    font-size: 25px;
+    font-family: 'Great Vibes', cursive; 
+    color: white;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .headerTitle {
+        width: 80%;
+        padding: 20%;
+        background-size: contain;
+    }
+
+
+}
+
+/*-- END --*/
+
+
+
+/*-- Carroussel --*/
+
+.Caroussel {
+    height: 100%;
+    width: 100% ;
+    background: url('Image/index.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.Caroussel h1 {
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: 'Cormorant Unicase', serif;
+    color: white;
+    text-align: center;
+}
+
+.Gandalf {
+ height: 100%;
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+
+.Gandalf img {
+    height: 28rem;
+    width: 18rem;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 10px black;
+}
+
+.GandalfDescription {
+    width: 100%;
+    margin: 10%;
+    margin-top: 50px;
+    margin-bottom: 500px;
+    display: flex;
+    flex-direction: row;
+    background-color:  hsla(0, 0%, 20%, 0.288);
+    box-shadow: 10px 10px 10px black;
+}
+
+.GandalfDescription .Text {
+    margin: 40px;
+}
+.GandalfDescription .Text h2 {
+    font-size: 40px;
+    font-family: 'Cormorant Unicase', serif;
+    color: white;
+}
+
+.GandalfDescription .Text ul{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family:  'Verdana, Geneva, Tahoma, sans-serif';
+    color: white;
+    list-style-type: none;
+    line-height: 30px;
+}   
+
+.GandalfDescription .Text h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Cormorant Unicase', serif;
+    color: white;
+}
+
+.GandalfDescription .Text p {
+    margin-top: 10px;
+    padding-right: 50px;
+    font-size: 16px;
+    font-family:  'Verdana, Geneva, Tahoma, sans-serif';
+    color: white;
+    line-height: 22px;
+}
