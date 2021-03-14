@@ -33,34 +33,40 @@ a:hover {
     text-decoration: underline;
 }
 
-
-.header {
-    height: 100%;
-    width: 100% ;
-}
-
-.backGround {
+.backGround2 {
     height:800px;
     width: 100%;
     opacity: 0.8;
     position: absolute;
+    left: auto;
+    right: auto;
     z-index: -1;
+ 
 }
 
-.navBar {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-left: 2rem;
+
+
+/*-- NavBar -- */
+
+nav {
+    padding-left: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    align-items: center;
+    position: fixed;
     background-color: hsla(0, 0%, 20%, 0.288);
     box-shadow: 10px 10px 10px black;
 }
-.navBar nav {
-    display: flex;
-    flex-direction: row;
-    height: 2rem;
-    align-items: center;
+
+.anim-nav{
+    background: hsla(0, 0%, 1%, 0.705);
+    color: black;
+    border-bottom: 1px solid;
 }
-.navBar .navMenu {
+
+.navMenu {
     padding: 3rem;;
     display: flex;
     flex-direction: row;
@@ -68,8 +74,7 @@ a:hover {
 
 }
 
-
-.navBar .navMenu a {
+.navMenu a {
     font-family: 'Raleway', sans-serif;
     padding-right: 2rem;
     padding-top: 0.5rem;
@@ -82,14 +87,23 @@ a:hover {
     align-content: center;
 }
 
+/*-- HEADER --*/  
+
+.header {
+    height: 100%;
+    width: 100% ;
+    background: url('Image/Header/SauronHeader.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
 
 
 .headerTitle {
-    height: 30rem;
-    margin-left: 35rem;
-    margin-right: 15rem;
-    margin-top: 8rem;
-    margin-bottom: 10rem;
+    width: 40%;
+    max-width: 900px;
+    padding: 12% 20% 20% 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,6 +111,7 @@ a:hover {
 
 .headerTitle h1 {
     width: 100%;
+    height: auto;
     font-size: 60px;
     font-family: 'Cormorant Unicase', serif;
     color: white;
@@ -104,6 +119,7 @@ a:hover {
 
 .headerTitle .join {
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row ;
     align-items: center;
@@ -122,8 +138,13 @@ a:hover {
     border: 0.1rem solid white;
 }
 
+.headerTitle .join button:hover  {
+    background-color: hsla(0, 0%, 100%, 0.281);
+}
+
 .headerTitle h2 {
     width: 100%;
+    height: auto;
     padding-bottom: 1rem;
     font-size: 25px;
     font-family: 'Great Vibes', cursive; 
@@ -133,6 +154,8 @@ a:hover {
 }
 
 .headerTitle p {
+    width: 100%;
+    height: auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     color: white;
@@ -140,6 +163,16 @@ a:hover {
     line-height: 2rem;    
 
 }
+
+@media screen and (max-width: 900px) {
+    .headerTitle {
+        width: 80%;
+        padding: 30% 15% 20% 15%;
+        background-size: contain;
+    }
+}
+
+
    /* -- End Header -- */
 
 
@@ -147,6 +180,15 @@ a:hover {
    /* -- TheRingSection -- */
 
 
+.theRing {
+    height: 100%;
+    width: 100% ;
+    background: url('Image/Header/Anneaux.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+} 
 
 .theRing .TheRule {
    color: white;
@@ -159,14 +201,9 @@ a:hover {
    }
 
 
-.theRing .theOne {   
-   margin-right: 20rem;  
-   margin-left: 5rem;
-   margin-top: 5rem;
-}
+
 
 .theRing .theOne .text2 {
-    margin-right: 25rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     color: white;
@@ -198,6 +235,27 @@ a:hover {
     padding-top: 3rem;
 }
 
+@media screen and (max-width: 1300px) {
+    .theRing {
+        width: 80%;
+        margin: 20% 10% 20% 10%; 
+        background-size: contain;
+    }
+}
+
+@media screen and  (min-width: 1300px) {
+    .theRing .theOne {   
+        margin-right: 20rem;  
+        margin-left: 5rem;
+        margin-top: 5rem;
+     }
+
+     .theRing .theOne .text2 {
+        margin-right: 25rem;
+     }
+     
+}
+    
    /* -- End -- */
 
 
@@ -207,15 +265,18 @@ a:hover {
 
 
 .priorityTarget {
-    margin-top: 10rem;
+    height: 100%;
+    width: 100% ;
+    background: url('Image/index.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50rem;
 }
 
-.priorityTarget .backGround {
-        padding-top: 30rem;
-}
 
 .priorityTarget .targetTitle {
-   margin: 10px;
+   margin-top: 10rem;
 }
 
 
@@ -229,8 +290,7 @@ a:hover {
 }
 
 .priorityTarget .allTarget {
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin: 10rem 5rem 10rem 5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -278,18 +338,65 @@ a:hover {
 
 }
 
+@media screen and (max-width: 1300px) {
+   
+   
+    .priorityTarget .targetTitle h2 {
+       margin: 10px auto;
+       font-size: 50px;
+   }
+   
+    .priorityTarget {
+        background-size: contain;
+
+    }
+  
+  
+    .priorityTarget .allTarget {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .priorityTarget .targetBlock p {
+        font-size: 12px;
+        padding-top: 1rem;
+    }
+
+    
+    .priorityTarget .targetBlock {
+        width: 80%;
+        margin: 10% 30%;  
+          
+    }
+
+    .priorityTarget .targetBlock img {
+        height: 22rem;
+        width: 16rem;
+        margin: 1rem auto;
+    }
+}
+
+
  /* -- End -- */
 
 
   /* -- TheNewsLetterSection -- */
 
   .newsLetter {
-    margin-top: 20rem;
+    height: 100%;
+    width: 100% ;
+    background: url('Image/newsLetterBackground.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -40rem;
   }
 
 
 
 .NewsletterBlock {
+    width: 65%;
+    max-width: 1300px;
     background-color:  hsla(0, 0%, 20%, 0.288);
     margin-right: 15rem;
     margin-left: 15rem;
@@ -334,7 +441,8 @@ a:hover {
 }
 
 .inputEmail input {
-    padding: 1.2rem 7rem;
+    width: 50%;
+    padding: 1.2rem 1rem 1.2rem 1rem;
     margin-right: 2rem;
     background-color: hsla(0, 0%, 20%, 0.288);
     box-shadow: 10px 10px 10px black;
@@ -354,6 +462,11 @@ a:hover {
     border-radius: 0.5rem;
     box-shadow: 8px 8px 6px black;
     border: 0.1rem solid white;
+    
+}
+
+.inputEmail button:hover {
+    background-color: hsla(0, 0%, 100%, 0.281);;
 }
 
 .endTitle {
@@ -363,7 +476,37 @@ a:hover {
     font-family: 'Raleway', sans-serif;
     text-align: center;
 }
+ @media screen and (max-width: 1300px) {
+    .NewsletterBlock {
+       margin: auto;
+       padding: 50px;
+    }
+    
+    .subscribeNewsletter h2 {
+        font-size: 30px;
+        width: 100%;
+    }
 
+    .subscribeNewsletter ul li {
+        font-size: 10px;
+    }
+
+    .inputEmail {
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .inputEmail input {
+        width: 93%;
+        padding: 20px 10px;
+    }
+   
+    .inputEmail button  {
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px 10px;
+    }
+ }
 /* -- END -- */
 
 /* -- Footer -- */
@@ -390,3 +533,12 @@ a:hover {
 .footer .footerBlock p {
     padding-top: 2rem;
 }
+
+@media screen and (max-width: 1300px) {
+    .footer .footerBlock {
+        font-size: 12px;
+        margin: 20px 20px
+    }
+    
+}
+
